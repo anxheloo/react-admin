@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="w-full p-[20px] flex justify-between items-center bg-mainBg">
       <div
         id="logo"
-        className="flex items-center font-bold gap-[10px] text-white"
+        className="flex items-center font-bold gap-[10px] text-white cursor-pointer"
       >
         <img src="logo.svg" alt="app name"></img>
         <span>ACMedia</span>

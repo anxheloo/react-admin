@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import Home from "./screens/Home";
-import Users from "./screens/Users";
-import Products from "./screens/Products";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Menu from "./components/Menu";
-import NoPage from "./screens/NoPage";
-import Login from "./screens/Login";
+import Home from "./screens/Home/Home";
+import Users from "./screens/Users/Users";
+import Products from "./screens/Product/Products";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Menu from "./components/Menu/Menu";
+import NoPage from "./screens/NoPage/NoPage";
+import Login from "./screens/Login/Login";
 
 function App() {
   const Layout = () => {
