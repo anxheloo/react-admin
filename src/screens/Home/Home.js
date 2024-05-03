@@ -14,6 +14,7 @@ import {
 } from "../../data/dummuData";
 import BarChart from "../../components/Grid-Boxes/BarChartBox/BarCharts";
 import PieChartBox from "../../components/Grid-Boxes/PieChartBox/PieChartBox";
+import BigChartBox from "../../components/Grid-Boxes/BigChartBox/BigChartBox";
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
         <ChartBox data={chartBoxConversion}></ChartBox>
       </div>
       <div id={styles.box} className={`${styles.box7}`}>
-        box7
+        <BigChartBox></BigChartBox>
       </div>
       <div id={styles.box} className="box8">
         <BarChart data={barChartBoxVisit}></BarChart>

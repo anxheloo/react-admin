@@ -31,7 +31,7 @@ const PieChartBox = ({ data }) => {
 
       <div className=" flex gap-3 justify-between">
         {data?.chartData.map((item) => (
-          <div className="  flex flex-col">
+          <div className="  flex flex-col" key={item.name}>
             <div key={item.name} className="flex items-center gap-2">
               <span
                 className="w-2 h-2 rounded-full bg-red-600"
