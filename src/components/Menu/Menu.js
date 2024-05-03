@@ -4,11 +4,11 @@ import MenuItem from "./MenuItem";
 
 const Menu = () => {
   return (
-    <div id="menu" className="flex flex-col gap-2 ">
-      <div id="item" className="">
+    <div id="menu" className="flex flex-col gap-2">
+      <div id="item" className="w-full">
         <span
           id={styles.title}
-          className="text-sm font-extralight text-softColor"
+          className="text-sm font-extralight text-softColor hidden lg:flex"
         >
           MAIN
         </span>
@@ -29,7 +29,7 @@ const Menu = () => {
       <div id="item">
         <span
           id={styles.title}
-          className="text-sm font-extralight text-softColor title"
+          className="text-sm font-extralight text-softColor title hidden lg:flex"
         >
           Lists
         </span>
@@ -62,7 +62,7 @@ const Menu = () => {
       <div id="item">
         <span
           id={styles.title}
-          className="text-sm font-extralight text-softColor"
+          className="text-sm font-extralight text-softColor hidden lg:flex"
         >
           GENERAL
         </span>
@@ -95,7 +95,7 @@ const Menu = () => {
       <div id="item">
         <span
           id={styles.title}
-          className="text-sm font-extralight text-softColor"
+          className="text-sm font-extralight text-softColor hidden lg:flex"
         >
           MAINTENANCE
         </span>
@@ -116,7 +116,7 @@ const Menu = () => {
       <div id="item">
         <span
           id={styles.title}
-          className="text-sm font-extralight text-softColor"
+          className="text-sm font-extralight text-softColor hidden lg:flex"
         >
           ANALYTICS
         </span>

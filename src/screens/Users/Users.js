@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import DataTable from "../../components/DataTable/DataTable";
 import { userRows } from "../../data/dummuData";
+import AddUser from "../../components/AddNewUser/AddUser";
 
 const Users = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -85,12 +88,17 @@ const Users = () => {
     <div className="h-full ">
       <div className="mb-5 flex items-center gap-5">
         <h1 className="text-2xl font-bold">Users</h1>
-        <button className="p-3 cursor-pointer bg-softBg border-[rgba(255,255,255,0.3)] rounded-lg hover:opacity-80 active:opacity-70">
+        <button
+          onClick={() => setOpenModal(true)}
+          className="p-3 cursor-pointer bg-softBg border-[rgba(255,255,255,0.3)] rounded-lg hover:opacity-80 active:opacity-70"
+        >
           Add New User
         </button>
       </div>
 
       <DataTable columns={columns} rows={userRows}></DataTable>
+
+      {openModal && <AddUser setOpenModal={setOpenModal}></AddUser>}
     </div>
   );
 };

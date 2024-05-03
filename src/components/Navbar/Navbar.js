@@ -8,13 +8,13 @@ const Navbar = () => {
         className="flex items-center font-bold gap-[10px] text-white cursor-pointer"
       >
         <img src="logo.svg" alt="app name"></img>
-        <span>ACMedia</span>
+        <span className="hidden lg:flex">ACMedia</span>
       </div>
 
-      <div id="icons" className="flex items-center gap-8">
-        <img src="search.svg" alt="search"></img>
-        <img src="app.svg" alt="search"></img>
-        <img src="expand.svg" alt="search"></img>
+      <div id="icons" className="flex items-center gap-5 lg:gap-8">
+        <img src="search.svg" alt="search" className="hidden lg:flex"></img>
+        <img src="app.svg" alt="search" className="hidden lg:flex"></img>
+        <img src="expand.svg" alt="expand" className="hidden lg:flex"></img>
 
         <div id="notifications" className="flex items-center relative ">
           <img src="notifications.svg" alt="notifications"></img>
@@ -29,7 +29,7 @@ const Navbar = () => {
             alt="user"
             className=" rounded-full w-8 h-8 object-cover"
           ></img>
-          <span>Anxhelo</span>
+          <span className="text-white">Anxhelo</span>
         </div>
 
         <img src="settings.svg" alt="search"></img>

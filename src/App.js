@@ -14,7 +14,7 @@ function App() {
     return (
       <div
         id="main-container"
-        className="h-screen flex flex-col justify-between"
+        className="h-screen w-full flex flex-col justify-between "
       >
         <Navbar></Navbar>
         <div
@@ -23,7 +23,7 @@ function App() {
         >
           <div
             id="menu-container"
-            className="w-[250px] py-[5px] px-[20px] border-r-[2px] border-[rgba(255,255,255,0.1)]"
+            className=" py-[5px] px-[5px] lg:px-[20px] border-r-[2px] border-[rgba(255,255,255,0.1)] "
           >
             <Menu></Menu>
           </div>

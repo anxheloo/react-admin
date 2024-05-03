@@ -18,7 +18,7 @@ import BigChartBox from "../../components/Grid-Boxes/BigChartBox/BigChartBox";
 
 const Home = () => {
   return (
-    <div id={styles.home}>
+    <div id={styles.home} className="w-full h-full overflow-y-scroll">
       <div id={styles.box} className={`${styles.box1}`}>
         <TopBox></TopBox>
       </div>
@@ -37,7 +37,7 @@ const Home = () => {
       <div id={styles.box} className="box6">
         <ChartBox data={chartBoxConversion}></ChartBox>
       </div>
-      <div id={styles.box} className={`${styles.box7}`}>
+      <div id={styles.box} className={`${styles.box7} hidden xl:flex`}>
         <BigChartBox></BigChartBox>
       </div>
       <div id={styles.box} className="box8">

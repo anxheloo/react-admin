@@ -8,3 +8,18 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+.addUserContainer {
+  @apply w-full flex justify-between items-center;
+}
+
+.addUserInputsContainer {
+  @apply flex flex-col gap-1 w-full max-w-[130px];
+}
+.addUserInput {
+  @apply w-full p-2 rounded-sm outline-none bg-transparent ring-2 ring-blue-500 text-sm;
+}
+
+.addUserLabel {
+  @apply text-sm text-[rgba(255,255,255,0.9)];
+}
