@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Menu from "./components/Menu/Menu";
 import NoPage from "./screens/NoPage/NoPage";
 import Login from "./screens/Login/Login";
+import UserDetails from "./screens/Users/UserDetails";
 
 function App() {
   const Layout = () => {
@@ -42,7 +43,8 @@ function App() {
 
         <Route path="/home" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="users" element={<Users />} />
+          <Route path="users" element={<Users />}></Route>
+          <Route path="users/:userId" element={<UserDetails />} />
           <Route path="products" element={<Products />} />
           <Route path="*" element={<NoPage />} />
         </Route>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./menu.module.css";
-import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
 
 const Menu = () => {
@@ -36,7 +35,7 @@ const Menu = () => {
         </span>
 
         <MenuItem
-          linkTo={"/users"}
+          linkTo={"/home/users"}
           logoSrc={"/user.svg"}
           text={"Users"}
         ></MenuItem>
